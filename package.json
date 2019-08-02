@@ -1,0 +1,30 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:extra": "babel-node extra",
+    "start:extraTs": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
+     "nodemon": "nodemon ./dist/index.js",
+    "demo": "node ./demo",
+    "index": "babel-node ./extra",
+    "triangle": "node ./extra/pattern/triangle",
+    "diamond": "node ./extra/pattern/diamond",
+    "validation": "node ./extra/utils/validation",
+    "permissions": "node ./extra/utils/permissions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.1",
+    "tsc-watch": "^2.2.1",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
+}
