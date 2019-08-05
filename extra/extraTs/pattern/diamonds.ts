@@ -1,27 +1,28 @@
-     export default  function diamond(a){
-         let space=(a/2)+1;
-          let star=1;
+     export default  function diamond(a) {
+         let space = (a / 2) + 1;
+         let star = 1;
 
-        let str="";
-for(let i=1;i<=a;i++){
-    for(let j=1;j<=space;j++){
-       str=str+" ";
+         let str = '';
+// tslint:disable-next-line: one-line
+         for (let i = 1; i <= a; i++){
+    for (let j = 1; j <= space; j++) {
+       str = str + ' ';
     }
-    for(let k=1;k<=star;k++){
-        str=str+" *";
+    for (let k = 1; k <= star; k++) {
+        str = str + ' *';
     }
-    if(a/2>star){
+    if (a / 2 > star) {
         star++;
         space--;
     }
-    else{
+    else {
         star--;
         space++;
     }
-    str=str+"\n";
-    
+    str = str + '\n';
+
 }
-console.log(str);
-    
+         console.log(str);
+
 }
-//diamond(5);
+// diamond(5);

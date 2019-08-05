@@ -5,7 +5,9 @@
   "scripts": {
     "start:extra": "babel-node extra",
     "start:extraTs": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
-     "nodemon": "nodemon ./dist/index.js",
+    "nodemon": "nodemon ./dist/index.js",
+    "start": "tsc-watch --project . --onSuccess \"npm run nodemon\"",
+    "lint:fix": "npm run lint --fix",
     "demo": "node ./demo",
     "index": "babel-node ./extra",
     "triangle": "node ./extra/pattern/triangle",
@@ -21,10 +23,15 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "dotenv": "^8.0.0",
     "nodemon": "^1.19.1",
     "tsc-watch": "^2.2.1",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "commitizen": "^4.0.3",
+    "express": "^4.17.1",
+    "husky": "^3.0.1"
+  }
 }

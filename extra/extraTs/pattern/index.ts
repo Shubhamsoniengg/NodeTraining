@@ -1,3 +1,3 @@
 export{ default as triangle } from './triangle';
 
-export {default as diamond} from './diamonds';
+export { default as diamond } from './diamonds';
